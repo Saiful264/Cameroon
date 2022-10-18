@@ -13,7 +13,53 @@ ul,
 ol {
   list-style-type: none;
 }
+html,body{
+  scroll-behavior: unset !important;
+}
 /* navbar css part start */
+/* navbar-toggler humberger menu */
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 40px;
+  height: 40px;
+}
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #000;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+  -webkit-transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  -moz-transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  -ms-transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  -o-transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+}
+.ham1 .top {
+  stroke-dasharray: 40 139;
+}
+.ham1 .bottom {
+  stroke-dasharray: 40 180;
+}
+.ham1.active .top {
+  stroke-dashoffset: -98px;
+}
+.ham1.active .bottom {
+  stroke-dashoffset: -138px;
+}
+/* navbar-toggler humberger menu */
+/* navbar-toggler */
 .navbar {
   position: absolute;
   top: 0;
@@ -78,6 +124,31 @@ ol {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
+/* sticky menu start */
+.sticky-menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #d4eafe;
+  z-index: 999;
+  transition: all linear 0.3s;
+  animation: sticky 1s;
+  -webkit-animation: sticky 1s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+@keyframes sticky {
+  from{
+    top: -100px;
+  }  
+  to{
+    top: 0;
+  }
+}
+/* sticky menu end */
 /* navbar css part end */
 /* banner css part start */
 #banner {
@@ -164,6 +235,10 @@ ol {
   -o-transition: all linear 0.03s;
   position: relative;
 }
+.features-item:hover .features-icon g{
+  fill: #3a85c9;
+}
+
 .item-after {
   position: absolute;
 }
@@ -171,7 +246,7 @@ ol {
   position: absolute;
   content: "";
   top: 47px;
-  left: 384px;
+  left: 326px;
   border-top: 1px solid #e8f4ff;
   border-right: 1px solid #e8f4ff;
   width: 229px;
@@ -184,7 +259,7 @@ ol {
   position: absolute;
   content: "";
   top: -14px;
-  left: 384px;
+  left: 326px;
   border-bottom: 1px solid #e8f4ff;
   border-right: 1px solid #e8f4ff;
   width: 127px;
@@ -198,10 +273,10 @@ ol {
   position: absolute;
   content: "";
   top: 61px;
-  right: 32px;
+  right: 30px;
   border-top: 1px solid #e8f4ff;
   border-left: 1px solid #e8f4ff;
-  width: 124px;
+  width: 64px;
   height: 86px;
   z-index: 99;
 }
@@ -213,10 +288,10 @@ ol {
   position: absolute;
   content: "";
   top: -12px;
-  right: 384px;
+  right: 325px;
   border-bottom: 1px solid #e8f4ff;
   border-left: 1px solid #e8f4ff;
-  width: 188px;
+  width: 125px;
   height: 121px;
 }
 .features-item:hover {
@@ -236,7 +311,6 @@ ol {
   font-weight: 400;
   font-size: 14px;
   color: #444444;
-  width: 308px;
 }
 .features-img {
   top: 122px;
@@ -512,7 +586,6 @@ ol {
   font-weight: 400;
   font-size: 14px;
   color: #444444;
-  width: 642px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -586,7 +659,6 @@ ol {
   font-size: 14px;
   line-height: 24px;
   color: #777777;
-  width: 290px;
 }
 .Subscribe-part input {
   width: 310px;
@@ -637,7 +709,7 @@ ol {
   font-weight: 400;
   font-size: 14px;
   color: #444444;
-  width: 468px;
+  /* width: 468px; */
   padding-top: 18px;
   padding-bottom: 30px;
 }
@@ -666,12 +738,12 @@ ol {
   color: #fff;
 }
 .camera-img img {
-  height: 512px;
+  height: 516px;
 }
 .paly-btn {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 51%;
   transform: translate(-50%, -50%);
   z-index: 100;
 }
@@ -844,11 +916,13 @@ ol {
   height: 550px;
 }
 .product-content-right {
-  padding-left: 30px;
-  background-color: #f5f5f5;
-  box-shadow: 0px 4px 37px 7px rgba(116, 153, 179, 0.31);
-  -webkit-box-shadow: 0px 4px 37px 7px rgba(116, 153, 179, 0.31);
-  -moz-box-shadow: 0px 4px 37px 7px rgba(116, 153, 179, 0.31);
+    padding-left: 30px;
+    background-color: #f5f5f5;
+    box-shadow: 0px 4px 37px 7px rgba(116, 153, 179, 0.31);
+    -webkit-box-shadow: 0px 4px 37px 7px rgba(116, 153, 179, 0.31);
+    -moz-box-shadow: 0px 4px 37px 7px rgba(116, 153, 179, 0.31);
+    margin-left: -12px;
+    padding-bottom: 56px;
 }
 .product-content-right h4 {
   font-family: "Open Sans", sans-serif;
@@ -867,7 +941,7 @@ ol {
   line-height: 30px;
 }
 .p-right-button {
-  padding-top: 30px;
+  padding-top: 40px;
 }
 .p-right-button a {
   padding: 16px 58px;
@@ -888,6 +962,8 @@ ol {
   padding-top: 80px;
 }
 .testimonial-content {
+  margin-left: 12px;
+  margin-right: 12px;
   border: 1px solid #d4eafe;
   margin-bottom: 20px;
   box-shadow: 0px 0px 6px 4px rgba(24,124,240,0.26);
@@ -912,7 +988,7 @@ ol {
 }
 .testimonial-img img {
   position: absolute;
-  left: 112px;
+  left: 50%;
   top: -78px;
   border: 5px solid #fff;
   border-radius: 50%;
@@ -920,6 +996,11 @@ ol {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
 }
 .testimonial-rating {
   padding-top: 76px;
@@ -1014,6 +1095,10 @@ ol {
 .news-item{
   background-color: #f5f5f5;
 }
+.news-main {
+	margin-left: 12px;
+	margin-right: 20px;
+}
 .news-main:hover{
   box-shadow: 0px 0px 6px 4px rgb(24 124 240 / 26%);
     -webkit-box-shadow: 0px 0px 6px 4px rgb(24 124 240 / 26%);
@@ -1035,7 +1120,7 @@ ol {
   background-color: #999999;
 }
 .news-content{
-  padding-top: 26px;
+  padding-top: 20px;
   padding-left: 30px;
 }
 .news-content h6{
@@ -1090,8 +1175,8 @@ ol {
     -webkit-box-shadow: 0px 14px 22px 6px rgb(208 223 236 / 91%);
     -moz-box-shadow: 0px 14px 22px 6px rgba(208, 223, 236, 0.91);
 }
-.news-post{
-  padding-top: 28px;
+.news-post {
+	padding-top: 49px;
 }
 .new-post{
   padding-top: 18px;
@@ -1281,9 +1366,25 @@ ol {
   color: #3a85c9;
   text-transform: uppercase;
 }
-
 /* footer css part end */
-/* navbar css part start */
-/* navbar css part end */
+/* back_to_top css part start */
+.back_to_top{
+  position: fixed;
+  bottom: 60px;
+  right: 50px;
+  display: none;
+  z-index: 99;
+}
+.back_to_top i{
+  width: 40px;
+  height: 40px;
+  background-color: #3a85c9;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  line-height: 38px;
+  
+}
+/* back_to_top css part end */
 /* navbar css part start */
 /* navbar css part end */

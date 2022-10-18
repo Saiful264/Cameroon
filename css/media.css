@@ -1,0 +1,421 @@
+@media (min-width: 1200px) and (max-width: 1400px) { 
+    .product-img-two img {
+        height: 550px;
+    }
+    .product-content-right h4 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .p-text h5 {
+        font-size: 16px;
+        line-height: 29px;
+    }
+    .p-right-button a {
+        padding: 16px 58px;
+        font-size: 16px;
+    }
+ }
+
+ @media (min-width: 992px) and (max-width:1199px) {
+     /* product part */
+     .product-img-two img {
+        height: 463px;
+    }
+    .product-content-right {
+        padding-bottom: 65px;
+    }
+    .product-content-right h4 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .p-right-button a {
+        padding: 16px 38px;
+        font-size: 14px;
+    }
+    .p-text h5 {
+        font-size: 13px;
+        line-height: 24px;
+    }
+    /* News part */
+    .news-content h6 {
+        font-size: 17px;
+        line-height: 18px;
+        padding-bottom: 2px;
+    }
+    .news-content p {
+        font-size: 13px;
+        padding-bottom: 3px;
+    }
+    .news-btn a {
+        font-size: 14px;
+        padding: 10px 17px;
+    }
+    .news-post {
+        padding-top: 8px;
+    }
+    .new-post a {
+        font-size: 13px;
+    } 
+ }
+@media (min-width: 992px) and (max-width:1999.98px ) {
+    /* Subscribe-part */
+    .Subscribe-part h2 {
+        font-size: 25px;
+        line-height: 36px;
+    }
+    .Subscribe-part p {
+        font-size: 13px;
+        line-height: 22px;
+    }
+    .Subscribe-part input {
+	width: 229px;
+    }
+    .Subscribe-part button {
+        padding: 10px 68px;
+    }
+    .camera-content p {
+        font-size: 13px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.99px){
+    /* navbar part */
+    .navbar {
+        position: sticky;
+        background-color: #d4eafe;
+    }
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+    .navbar-expand-lg .navbar-nav .nav-item:nth-child(6) .nav-link {
+        display: none;
+    }
+    /* banner part */
+    #banner {
+        padding-top: 34px;
+        padding-bottom: 0;
+    }
+    .banner-content h3 {
+        padding-bottom: 12px;
+    }
+    .banner-img {
+        position: sticky;
+    }
+    /* features part */
+    #features {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .features-img {
+        display: none;
+    }
+    .features-content p {
+        font-size: 16px;
+    }
+    .about-content p {
+        font-size: 16px;
+    }
+    .features-item {
+        margin: 0;
+    }
+    /* About part */
+    #Subscribe {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .about-img img {
+        position: sticky;
+        width: 100%;
+    }
+    .Subscribe-part h2 {
+        font-size: 46px;
+    }
+    .Subscribe-part p {
+        font-size: 20px;
+    }
+    .Subscribe-part input {
+        width: 464px;
+    }
+    /* camera part */
+    .camera-content {
+        padding-left: 0;
+    }
+    .camera-content p {
+        padding: 0 40px;
+    }
+    .camera-left-img {
+        position: sticky;
+    }
+    .camera-img img {
+        height: auto;
+    }
+    .paly-btn {
+        top: 65%;
+    }
+    .camera-text {
+        top: 24%;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+    }
+    /* product part */
+    #product {
+        padding-top: 60px;
+    }
+
+}
+@media (min-width: 576px) and  (max-width: 767.98px) { 
+    /* navbar part */
+    .navbar {
+        position: sticky;
+        background-color: #d4eafe;
+    }
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+    .navbar-expand-lg .navbar-nav .nav-item:nth-child(6) .nav-link {
+        display: none;
+    }
+   /* banner part */
+    #banner {
+        padding-top: 25px;
+        padding-bottom: 0;
+    }
+    .banner-img {
+        position: sticky;
+    }
+    /* features part */
+    #features {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .Subscribe-part input {
+        width: 394px;
+    }
+    .features-img {
+        display: none;
+    }
+
+    .about-img img {
+        position: sticky;
+        width: 100%;
+    }
+    /* Subscribe part */
+    #Subscribe {
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+    .Subscribe-part h2 {
+        font-size: 42px;
+    }
+    .Subscribe-part p {
+        font-size: 15px;
+    }
+    .Subscribe-part button {
+        padding: 10px 149px;
+    }
+    /* product part */
+    .p-right-button a {
+        font-size: 13px;
+        
+    }
+    .camera-content {
+        padding-left: 0;
+    }
+    .camera-content p {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .camera-left-img {
+        position: sticky;
+    }
+    .camera-img img {
+        height: auto;
+    }
+    .paly-btn {
+        top: 69%;
+    }
+    .camera-text {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+@media(max-width:575.99px){
+    /* navbar part */
+    .navbar {
+        position: sticky;
+        background-color: #d4eafe;
+    }
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-top: 4px;
+    }
+    .navbar-expand-lg .navbar-nav .nav-item:nth-child(6) .nav-link {
+        display: none;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        color: #000;
+    }
+    /* banner part */
+    .banner-content h1 {
+        font-size: 35px;
+    }
+    .banner-content h2 {
+        font-size: 38px;
+    }
+    .banner-content h3 {
+        font-size: 38px;
+    }
+    .banner-content h3 {
+        padding-bottom: 12px;
+    }
+    .banner-btn button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    #banner {
+        padding-top: 10px;
+        padding-bottom: 0;
+    }
+    .banner-img {
+        position: static;
+    }
+     /* features part */
+     #features {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .features-img {
+        display: none;
+    }
+    .about-content h1 {
+        font-size: 30px;
+    }
+    .features-item {
+        margin-bottom: 0;
+        padding: 10px 30px;
+    }
+    .about-content p {
+        padding-bottom: 22px;
+    }
+    .features-content p {
+        padding: 0;
+    }
+    /* camera part */
+    .camera-content {
+        text-align: center;
+        padding-left: 0;
+    }
+    .camera-content h4 {
+        font-size: 26px;
+    }
+    .camera-content p {
+        padding-left: 30px;
+        font-size: 13px;
+        /* width: 300px; */
+        margin-bottom: 0;
+    }
+    .camera-left-img {
+        position: sticky;
+    }
+    .paly-btn {
+        top: 76%;
+    }
+    .camera-text {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .camera-img img {
+        height: auto;
+      }
+    /* About part */
+    #about {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .about-item h3 {
+        padding-top: 5px;
+        font-size: 28px;
+    }
+    .about-img img {
+        position: static;
+	    width: 100%;
+    }
+    .about-item p {
+        margin-bottom: 0;
+    }
+    /* Subscribe part */
+    #Subscribe {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    .faq-section h1 {
+        font-size: 24px;
+    }
+    .accordion-item .accordion-header .accordion-button {
+        font-size: 13px;
+    }
+    .accordion-collapse p {
+        font-size: 13px;
+    }
+    .Subscribe-part h2 {
+        font-size: 30px;
+        line-height: 38px;
+    }
+    .Subscribe-part p {
+        font-size: 13px;
+        line-height: 24px;
+    }
+    .Subscribe-part input {
+        width: 245px;
+    }
+    .Subscribe-part button {
+        padding: 10px 75px;
+    }
+    /* product part */
+    #product {
+        padding-top: 70px;
+    }
+    /* news part */
+    #news {
+        padding-top: 50px;
+    }
+    .news-arrow {
+        padding-bottom: 60px;
+    }
+    .new-post-text h6 {
+        font-size: 15px;
+        padding-right: 42px;
+    }
+    .news-arrow {
+        padding-top: 30px;
+    }
+    /* footer part */
+    .footer-adderss-link a {
+        padding-left: 9px;
+    }
+    .footer-adderss-link a::after {
+        right: -9px;
+    }
+}
+@media (min-width: 342px) and (max-width:575.99px) {
+    .paly-btn {
+        top: 72%;
+    }
+}
+@media (min-width: 410px) and (max-width:575.99px) {
+    .paly-btn {
+        top: 69%;
+    }
+    .Subscribe-part input {
+        width: 310px;
+    }
+    .Subscribe-part button {
+        padding: 10px 108px;
+    }
+}
+
